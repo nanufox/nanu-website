@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nanu’s Letters</title>
+  <meta name="description" content="Nanu’s Letters — an Eastern Armenian reading app for ages 6–8.">
+  <meta name="theme-color" content="#FFFCF6">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Noto+Serif+Armenian:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=Noto+Sans+Armenian:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page" id="top">
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nanu’s Letters">
+        <span class="brand__badge"><img src="assets/nanu_idle.png" alt="" width="40" height="40"></span>
+        <span class="brand__name" lang="en">Nanu’s Letters</span>
+      </a>
+
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:langGroup">
+        <button type="button" class="lang-switch__btn" data-lang="hy" lang="hy" aria-pressed="false">Հայերեն</button>
+        <button type="button" class="lang-switch__btn" data-lang="en" lang="en" aria-pressed="true">English</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__text">
+          <p class="hero__label" data-i18n="heroLabel">Eastern Armenian · Ages 6–8</p>
+          <h1 class="hero__title" id="hero-title" data-i18n="heroTitle">First steps in Armenian reading.</h1>
+          <a class="button" href="#preview" data-i18n="heroButton">See the app ↓</a>
+        </div>
+
+        <div class="hero__art">
+          <div class="hero__nanu">
+            <span class="hero__letters" lang="hy" aria-hidden="true">Ա ա</span>
+            <span class="hero__circle" aria-hidden="true"></span>
+            <img class="hero__fox" src="assets/nanu_idle.png" alt="" width="1024" height="1024">
+          </div>
+          <figure class="phone phone--hero">
+            <img src="assets/05-write.png"
+                 alt="App screen: tracing the Armenian letter Ա"
+                 data-i18n-attr="alt:altWrite">
+          </figure>
+        </div>
+      </section>
+
+      <section class="preview" id="preview" aria-labelledby="preview-title" tabindex="-1">
+        <h2 class="preview__title" id="preview-title" data-i18n="previewTitle">A peek inside</h2>
+        <ul class="cards">
+          <li class="card card--meet">
+            <figure class="phone phone--card">
+              <img src="assets/04-meet.png" loading="lazy"
+                   alt="App screen: meeting the letter Ա through illustrated words"
+                   data-i18n-attr="alt:altMeet">
+            </figure>
+            <span class="card__label" data-i18n="cardMeet">Meet</span>
+          </li>
+          <li class="card card--find">
+            <figure class="phone phone--card">
+              <img src="assets/07-find-all.png" loading="lazy"
+                   alt="App screen: finding every Ա and ա among scattered letters"
+                   data-i18n-attr="alt:altFind">
+            </figure>
+            <span class="card__label" data-i18n="cardFind">Find</span>
+          </li>
+          <li class="card card--listen">
+            <figure class="phone phone--card">
+              <img src="assets/08-hear.png" loading="lazy"
+                   alt="App screen: listening for the sound and choosing a picture"
+                   data-i18n-attr="alt:altHear">
+            </figure>
+            <span class="card__label" data-i18n="cardListen">Listen</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <!-- Hidden until INSTAGRAM_URL in script.js is set to the confirmed profile. -->
+      <a class="footer__link" id="instagram-link" href="#" target="_blank" rel="noopener" hidden data-i18n="footerLink">Follow Nanu on Instagram ↗</a>
+      <p class="footer__status" data-i18n="footerStatus">In development for iOS and Android</p>
+    </footer>
+
+  </div>
+</body>
+</html>
