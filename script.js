@@ -2,9 +2,8 @@
 (function () {
   'use strict';
 
-  // TODO: set to the confirmed Instagram profile URL (e.g. 'https://www.instagram.com/<handle>/').
-  // While this is empty, the footer link stays hidden.
-  var INSTAGRAM_URL = '';
+  // Footer Instagram link; leave empty to hide it.
+  var INSTAGRAM_URL = 'https://www.instagram.com/nanu.learn/';
 
   var STORAGE_KEY = 'nanu-lang';
 
@@ -13,7 +12,6 @@
       title: 'Nanu’s Letters',
       description: 'Nanu’s Letters — an Eastern Armenian reading app for ages 6–8.',
       langGroup: 'Language',
-      heroLabel: 'Eastern Armenian · Ages 6–8',
       heroTitle: 'First steps in Armenian reading.',
       heroButton: 'See the app ↓',
       previewTitle: 'A peek inside',
@@ -31,7 +29,6 @@
       title: 'Nanu’s Letters',
       description: 'Nanu’s Letters — արևելահայերեն կարդալու հավելված 6–8 տարեկանների համար։',
       langGroup: 'Լեզու',
-      heroLabel: 'Արևելահայերեն · 6–8 տարեկանների համար',
       heroTitle: 'Հայերեն կարդալու առաջին քայլերը։',
       heroButton: 'Տե՛ս հավելվածը ↓',
       previewTitle: 'Մի հայացք հավելվածին',

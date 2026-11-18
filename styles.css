@@ -10,7 +10,6 @@
   --mint: #D7F2E6;            /* Listen card */
   --espresso: #30231E;        /* main text, phone frame */
   --burnt-orange: #AC3714;    /* button, Instagram link */
-  --deep-teal: #28645D;       /* small hero label */
   --gray-brown: #64534A;      /* secondary text */
   --pale-sand: #EFE1D1;       /* divider */
 
@@ -145,22 +144,7 @@ h1, h2, p, ul, figure { margin: 0; }
   padding: 40px 0 32px;
 }
 
-.hero__label {
-  color: var(--deep-teal);
-  font-size: 0.8125rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-/* Armenian is not uppercased: CSS would turn «և» into «ԵՒ». */
-:lang(hy) .hero__label {
-  text-transform: none;
-  letter-spacing: 0.01em;
-  font-size: 0.875rem;
-}
-
 .hero__title {
-  margin-top: 16px;
   font-family: var(--font-serif);
   font-weight: 700;
   font-size: clamp(2.25rem, 4.4vw, 3.25rem);
